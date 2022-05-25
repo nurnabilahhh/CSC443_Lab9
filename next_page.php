@@ -12,11 +12,11 @@
     echo "<html>";
 
     $queryString = $_SERVER["QUERY_STRING"];
-    echo "Query string of the incoming URL: ".$queryString."\n";
+    echo "Query string of the incoming URL: ".$queryString."<br>";
 
-    echo "Cookies received:\n";
-    foreach ($_COOKIES as $name => $value){
-        echo " $name = $value\n";
+    echo "Cookies received:<br>";
+    foreach ($_COOKIE as $name => $value){
+        echo " $name = $value<br>";
     }
 
     $sid = session_id();
